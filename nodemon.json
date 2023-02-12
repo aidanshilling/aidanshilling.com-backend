@@ -1,0 +1,5 @@
+{
+	"watch": ["src", "package.json", ".env"],
+	"ext": "ts",
+	"exec": "npm i && docker-compose up >/dev/null & (npm run tsoa && echo 'Running! [Docs: http://localhost:3000/docs] [Mongo Panel: http://localhost:8081]' && ts-node ./src/index.ts)"
+}
